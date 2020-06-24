@@ -1,12 +1,8 @@
 /* contact header */
 .header .contact {
   @extend %list;
-  display: none;
-
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    margin-left: auto;
-  }
+  display: flex;
+  margin-left: auto;
 }
 
 .contact-item {

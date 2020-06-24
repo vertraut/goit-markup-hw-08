@@ -1,7 +1,6 @@
 /* hero */
 .hero {
   max-width: 1600px;
-  min-width: 450px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
@@ -10,31 +9,20 @@
 
   background-repeat: no-repeat;
   background-position: center;
-
-  background-size: cover;
 }
 .hero .container {
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  @media screen and (min-width: $desktop) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   color: $light-color;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
+  font-size: 44px;
+  line-height: 1.37;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 30px;
-
-  @media screen and (min-width: $desktop) {
-    font-size: 44px;
-    line-height: 1.37;
-  }
 }

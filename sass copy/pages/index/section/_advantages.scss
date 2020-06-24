@@ -1,13 +1,16 @@
 /* advantages - преимущества */
 
+.section.advantages {
+  border-bottom: 1px solid #ececec;
+}
+
+.advantages .container {
+}
+
 .advantages ul {
   @extend %list;
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  justify-content: space-between;
 }
 
 .advantages-title {
@@ -17,25 +20,7 @@
 }
 
 .advantages-item {
-  width: 450px;
-
-  @media screen and (max-width: $tablet) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    width: 354px;
-
-    &:not(:nth-last-child(-n + 2)) {
-      margin-bottom: 30px;
-    }
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 270px;
-  }
+  width: 270px;
 }
 
 .advantages-item h3 {
@@ -59,7 +44,7 @@
   justify-content: center;
   align-items: center;
   background-color: #f5f4fa;
-  width: 100%;
+  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
