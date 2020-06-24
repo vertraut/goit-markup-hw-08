@@ -1,0 +1,58 @@
+/* Модальное окно */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity $transition-duration $cubic;
+
+  &.is-hidden {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
+  min-width: 528px;
+  background-color: $light-bg-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  transition: transform $transition-duration $cubic;
+}
+
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $light-bg-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.icon-close {
+  fill: #000000;
+  width: 11px;
+  height: 11px;
+  transition: fill $transition-duration $cubic;
+}
+
+.btn-close:hover .icon-close,
+.btn-close:focus .icon-close {
+  fill: $accent-color;
+}

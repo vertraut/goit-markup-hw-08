@@ -1,0 +1,66 @@
+/* формирование карточки */
+.element {
+  display: block;
+  text-decoration: none;
+}
+
+.element-content {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.element-img {
+  display: block;
+}
+
+.element-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.element-disc {
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  padding: 24px;
+  transform: translateY(100%);
+  align-items: center;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  color: $light-color;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  opacity: 0.5;
+  transition: opacity $transition-duration $cubic, transform $transition-duration $cubic;
+}
+
+.examples li:hover .element-disc {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.element-title {
+  margin: 0;
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+.element-type {
+  margin: 0;
+
+  color: $primery-text-color;
+  font-size: 16px;
+  line-height: 1.87;
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- section>(ul>li*5.filter-item>button[type="button"]{Текст кнопки})+(ul>li*9>a.element>img+h2{название_работы}+p{тип_работы}+p{описание_работы}) -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <title>Web Studio v.1</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a href="./" lang="en" class="logo"> Web <span class="logo-accent">Studio</span> </a>
+          <ul>
+            <li><a href="./" class="nav-link">Студия</a></li>
+            <li><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
+            <li><a href="" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact-item">
+              <svg class="contact-icon" width="16" height="11.2">
+                <use href="./images/sprite.svg#mail_icon"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="contact-item">
+              <svg class="contact-icon" width="10" height="14.94">
+                <use href="./images/sprite.svg#phone_icon"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section portfolio">
+        <div class="container">
+          <!-- Кнопки фильтра -->
+          <h1 class="visually-hidden">Наши работы</h1>
+          <ul class="filter">
+            <li class="filter-item"><button type="button">Все</button></li>
+            <li class="filter-item"><button type="button">Веб-сайты</button></li>
+            <li class="filter-item"><button type="button">Приложение</button></li>
+            <li class="filter-item"><button type="button">Дизайн</button></li>
+            <li class="filter-item"><button type="button">Маркетинг</button></li>
+          </ul>
+
+          <!-- Сетка работ -->
+          <ul class="examples">
+            <li>
+              <a href="" class="element">
+                <div class="element-thumb">
+                  <img
+                    src="./images/portfolio/1.jpg"
+                    alt="Экран ноутбука"
+                    width="370"
+                    height="294"
+                    class="element-img"
+                  />
+                  <p class="element-disc">
+                    Технокряк это современная площадка распространения коронавируса. Компании
+                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                    конкурентов.
+                  </p>
+                </div>
+                <div class="element-content">
+                  <h2 class="element-title">Технокряк</h2>
+                  <p class="element-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="element">
+                <div class="element-thumb">
+                  <img
+                    src="./images/portfolio/2.jpg"
+                    alt="Два баскетболиста играют"
+                    width="370"
+                    height="294"
+                    class="element-img"
+                  />
+                  <p class="element-disc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates at
+                    molestiae aut consequatur hic laudantium quam libero minus sit? Nesciunt!
+                  </p>
+                </div>
+
+                <div class="element-content">
+                  <h2 class="element-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="element-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="element">
+                <div class="element-thumb">
+                  <img
+                    src="./images/portfolio/3.jpg"
+                    alt="Логотип рыбного ресторана"
+                    width="370"
+                    height="294"
+                    class="element-img"
+                  />
+                  <p class="element-disc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates at
+                    molestiae aut consequatur hic laudantium quam libero minus sit? Nesciunt!
+                  </p>
+                </div>
+
+                <div class="element-content">
+                  <h2 class="element-title">Ресторан Seafood</h2>
+                  <p class="element-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="element">
+                <div class="element-thumb">
+                  <img
+                    src="./images/portfolio/4.jpg"
+                    alt="Наушники"
+                    width="370"
+                    height="294"
+                    class="element-img"
+                  />
+                  <p class="element-disc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates at
+                    molestiae aut consequatur hic laudantium quam libero minus sit? Nesciunt!
+                  </p>
+                </div>
+                <div class="element-content">
+                  <h2 class="element-title">Проект Prime</h2>
+                  <p class="element-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="element">
+                <div class="element-thumb">
+                  <img
+                    src="./images/portfolio/5.jpg"
+                    alt="Две коробки"
+                    width="370"
+                    height="294"
+                    class="element-img"
+                  />
+                  <p class="element-disc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates at
+                    molestiae aut consequatur hic laudantium quam libero minus sit? Nesciunt!
+                  </p>
+                </div>
+                <div class="element-content">
+                  <h2 class="element-title">Проект Boxes</h2>
+                  <p class="element-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="element">
+                <div class="element-thumb">
+                  <img
+                    src="./images/portfolio/6.jpg"
+                    alt="Монитор"
+                    width="370"
+                    height="294"
+                    class="element-img"
+                  />
+                  <p class="element-disc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates at
+                    molestiae aut consequatur hic laudantium quam libero minus sit? Nesciunt!
+                  </p>
+                </div>
+
+                <div class="element-content">
+                  <h2 class="element-title">Inspiration has no Borders</h2>
+                  <p class="element-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="element">
+                <div class="element-thumb">
+                  <img
+                    src="./images/portfolio/7.jpg"
+                    alt="Открытая книга"
+                    width="370"
+                    height="294"
+                    class="element-img"
+                  />
+                  <p class="element-disc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates at
+                    molestiae aut consequatur hic laudantium quam libero minus sit? Nesciunt!
+                  </p>
+                </div>
+
+                <div class="element-content">
+                  <h2 class="element-title">Издание Limited Edition</h2>
+                  <p class="element-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="element">
+                <div class="element-thumb">
+                  <img
+                    src="./images/portfolio/8.jpg"
+                    alt="Этикетка"
+                    width="370"
+                    height="294"
+                    class="element-img"
+                  />
+                  <p class="element-disc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates at
+                    molestiae aut consequatur hic laudantium quam libero minus sit? Nesciunt!
+                  </p>
+                </div>
+                <div class="element-content">
+                  <h2 class="element-title">Проект LAB</h2>
+                  <p class="element-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="element">
+                <div class="element-thumb">
+                  <img
+                    src="./images/portfolio/9.jpg"
+                    alt="Человек работает на ноутбуке"
+                    width="370"
+                    height="294"
+                    class="element-img"
+                  />
+                  <p class="element-disc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates at
+                    molestiae aut consequatur hic laudantium quam libero minus sit? Nesciunt!
+                  </p>
+                </div>
+                <div class="element-content">
+                  <h2 class="element-title">Growing Business</h2>
+                  <p class="element-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer    -->
+    <footer class="footer">
+      <!-- Адрес и контакты -->
+      <div class="flex container">
+        <!-- Адрес -->
+        <div class="address">
+          <a href="/" lang="en" class="logo">Web <span class="logo-accent">Studio</span></a>
+
+          <address>
+            <ul>
+              <li>
+                <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
+              </li>
+              <li>
+                <a href="mailto:info@examples.com" class="footer-mail">info@examples.com</a>
+              </li>
+              <li>
+                <a href="tel:+380991111111" class="footer-phone">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Соцсети -->
+        <div class="footer-social">
+          <b>присоединяйтесь</b>
+          <ul class="footer-social-list">
+            <li>
+              <a href="" aria-label="Ссылка на соцсеть Instagram">
+                <svg class="social-icon">
+                  <use href="./images/sprite.svg#instagram_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" aria-label="Ссылка на соцсеть Twitter">
+                <svg class="social-icon">
+                  <use href="./images/sprite.svg#twitter_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" aria-label="Ссылка на соцсеть Facebook">
+                <svg class="social-icon">
+                  <use href="./images/sprite.svg#facebook_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" aria-label="Ссылка на соцсеть Linkedin">
+                <svg class="social-icon">
+                  <use href="./images/sprite.svg#linkedin_icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- подписка -->
+        <div class="subscribe">
+          <b>подписаться на рассылку</b>
+          <form class="subscribe-form">
+            <input type="email" name="mail" placeholder="E-mail" />
+            <button class="button subscribe" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

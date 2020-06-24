@@ -1,0 +1,26 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(49, 49, 49, 0.9);
+  opacity: 1;
+  transition: opacity 250ms;
+}
+
+.backdrop.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+
+  min-height: 400px;
+  min-width: 600px;
+  background-color: #fff;
+}

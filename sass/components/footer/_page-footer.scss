@@ -1,0 +1,102 @@
+/* footer */
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.flex.container {
+  display: flex;
+  align-items: baseline;
+}
+
+/* блок div с адресом и контактами */
+.footer .address {
+  margin-right: auto;
+}
+
+.address ul {
+  @extend %list;
+}
+
+.footer .address li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer address {
+  /* весь блок адреса */
+  font-style: normal;
+}
+
+.footer-address {
+  /* город, улица, дом */
+  font-size: 14px;
+  line-height: 1.71;
+  color: $light-color;
+  margin: 0;
+}
+
+.footer-mail,
+.footer-phone {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  margin: 0;
+}
+
+/* Социальные сети */
+.footer-social {
+  margin-right: 102px;
+}
+
+.footer-social-list {
+  @extend %list;
+  display: flex;
+}
+
+.footer .social-icon {
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-social-list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $light-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $light-color;
+    background-color: $accent-color;
+    text-decoration: none;
+  }
+}
+
+/* Копирайт */
+
+.copyright {
+  margin-top: 28px;
+  margin-bottom: 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+}
