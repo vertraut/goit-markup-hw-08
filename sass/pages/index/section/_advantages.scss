@@ -3,7 +3,7 @@
 .advantages ul {
   @extend %list;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $min-tablet) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -19,13 +19,13 @@
 .advantages-item {
   width: 450px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $max-tablet) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $min-tablet) and (max-width: $max-desktop) {
     width: 354px;
 
     &:not(:nth-last-child(-n + 2)) {
@@ -33,7 +33,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $min-desktop) {
     width: 270px;
   }
 }

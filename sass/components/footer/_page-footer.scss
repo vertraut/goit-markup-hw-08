@@ -8,16 +8,20 @@
 .flex.container {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  @media screen and (min-width: $tablet) {
+
+  @media screen and (min-width: $min-tablet) {
+    align-items: baseline;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
 /* блок div с адресом и контактами */
 .footer .address {
-  margin-right: auto;
+  @media screen and (min-width: $min-desktop) {
+    margin-right: auto;
+  }
 }
 
 .address ul {
@@ -31,6 +35,13 @@
 .footer address {
   /* весь блок адреса */
   font-style: normal;
+
+  & li {
+    @media screen and (max-width: $max-desktop) {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .footer-address {
@@ -53,12 +64,22 @@
 
 /* Социальные сети */
 .footer-social {
-  margin-right: 102px;
+  @media screen and (min-width: $min-desktop) {
+    margin-right: 102px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    margin-top: 60px;
+  }
 }
 
 .footer-social-list {
   @extend %list;
   display: flex;
+
+  @media screen and (max-width: $max-tablet) {
+    justify-content: center;
+  }
 }
 
 .footer .social-icon {

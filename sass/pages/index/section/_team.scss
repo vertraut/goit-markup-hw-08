@@ -8,7 +8,7 @@
 .team .items {
   @extend %list;
   margin-bottom: 20px;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $min-tablet) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -32,13 +32,13 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
   padding-bottom: 24px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $max-tablet) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
   }
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $min-tablet) and (max-width: $max-desktop) {
     width: 354px;
 
     &:not(:nth-last-child(-n + 2)) {
@@ -46,7 +46,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $min-desktop) {
     width: 270px;
   }
 }

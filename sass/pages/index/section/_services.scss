@@ -3,7 +3,7 @@
 .section.services {
   display: none;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $min-desktop) {
     display: block;
   }
 }
@@ -20,7 +20,7 @@
 .services ul {
   @extend %list;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $min-tablet) {
     display: flex;
     justify-content: space-between;
   }

@@ -11,6 +11,11 @@
 
 .footer .logo {
   margin-bottom: 20px;
+
+  @media screen and (max-width: $max-desktop) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer .logo-accent {

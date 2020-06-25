@@ -11,6 +11,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #757575;
   letter-spacing: 0.03em;
+  width: 100vw;
 }
 
 h1,
@@ -138,6 +139,17 @@ img {
 
 .footer .logo {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer .logo-accent {
@@ -417,25 +429,29 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 @media screen and (min-width: 768px) {
   .flex.container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 /* блок div с адресом и контактами */
-.footer .address {
-  margin-right: auto;
+@media screen and (min-width: 1200px) {
+  .footer .address {
+    margin-right: auto;
+  }
 }
 
 .footer .address li:not(:last-child) {
@@ -445,6 +461,17 @@ img {
 .footer address {
   /* весь блок адреса */
   font-style: normal;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer address li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-address {
@@ -466,14 +493,30 @@ img {
 }
 
 /* Социальные сети */
-.footer-social {
-  margin-right: 102px;
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-right: 102px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-top: 60px;
+  }
 }
 
 .footer-social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer .social-icon {
@@ -512,6 +555,12 @@ img {
 }
 
 /* Форма подписки */
+@media screen and (max-width: 1199px) {
+  .footer .subscribe {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscribe-form {
     display: -webkit-box;
@@ -531,7 +580,7 @@ img {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .subscribe-form input {
     width: 450px;
     margin-bottom: 20px;
@@ -573,7 +622,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button.subscribe {
+.subscribe-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,7 +636,7 @@ img {
   margin-right: auto;
 }
 
-.button.subscribe::after {
+.subscribe-button::after {
   content: '';
   background-image: url(../images/icon-send.svg);
   width: 24px;
@@ -605,5 +654,17 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-social b,
+  .subscribe b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

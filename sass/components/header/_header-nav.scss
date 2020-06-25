@@ -14,7 +14,7 @@
   @extend %list;
   display: none;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $min-desktop) {
     display: flex;
   }
 }

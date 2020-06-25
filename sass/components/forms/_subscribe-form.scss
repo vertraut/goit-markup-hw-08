@@ -1,6 +1,13 @@
 /* Форма подписки */
+
+.footer .subscribe {
+  @media screen and (max-width: $max-desktop) {
+    margin-top: 60px;
+  }
+}
+
 .subscribe-form {
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $min-desktop) {
     display: flex;
   }
 }
@@ -14,12 +21,12 @@
   background-color: inherit;
   color: $light-color;
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: $max-desktop) {
     width: 450px;
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $min-desktop) {
     width: 358px;
     margin-right: 12px;
   }
@@ -32,7 +39,7 @@
   }
 }
 
-.button.subscribe {
+.subscribe-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,4 +64,9 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: $max-desktop) {
+    display: flex;
+    justify-content: center;
+  }
 }
