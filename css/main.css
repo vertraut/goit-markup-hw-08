@@ -11,7 +11,6 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #757575;
   letter-spacing: 0.03em;
-  width: 100vw;
 }
 
 h1,
@@ -36,11 +35,17 @@ img {
 }
 
 .container {
-  width: 480px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 200px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -337,8 +342,10 @@ img {
   margin-bottom: 0;
 }
 
-.advantages-item {
-  width: 450px;
+@media screen and (min-width: 480px) {
+  .advantages-item {
+    width: 450px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -372,10 +379,9 @@ img {
 
 .advantages-item p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   margin-top: 0;
   margin-bottom: 0;
-  /* or 171% */
 }
 
 .advanages-icon {

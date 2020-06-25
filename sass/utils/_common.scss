@@ -3,7 +3,6 @@ body {
   font-family: 'Roboto', sans-serif;
   color: $primery-text-color;
   letter-spacing: 0.03em;
-  width: 100vw;
 }
 
 h1,
@@ -27,11 +26,15 @@ img {
 }
 
 .container {
-  width: 480px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 200px;
+
+  @media screen and (min-width: $min-mobile) {
+    width: 480px;
+  }
 
   @media screen and (min-width: $min-tablet) {
     width: 768px;

@@ -17,7 +17,9 @@
 }
 
 .advantages-item {
-  width: 450px;
+  @media screen and (min-width: $min-mobile) {
+    width: 450px;
+  }
 
   @media screen and (max-width: $max-tablet) {
     &:not(:last-child) {
@@ -48,10 +50,9 @@
 
 .advantages-item p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   margin-top: 0;
   margin-bottom: 0;
-  /* or 171% */
 }
 
 .advanages-icon {
