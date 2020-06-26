@@ -39,7 +39,7 @@ img {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 200px;
+  min-width: 280px;
 }
 
 @media screen and (min-width: 480px) {
@@ -95,6 +95,7 @@ img {
 }
 
 .section {
+  min-width: 280px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -280,7 +281,7 @@ img {
 /* hero */
 .hero {
   max-width: 1600px;
-  min-width: 450px;
+  min-width: 280px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero.jpg);
@@ -465,7 +466,7 @@ img {
 /* Клиенты */
 .clients_item {
   height: 90px;
-  width: 210px;
+  width: calc(50% - 15px);
 }
 
 @media screen and (max-width: 767px) {
@@ -570,11 +571,16 @@ img {
 }
 
 .team-item {
-  width: 450px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   padding-bottom: 24px;
+}
+
+@media screen and (min-width: 480px) {
+  .team-item {
+    width: 450px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -905,6 +911,7 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 280px;
 }
 
 .flex.container {

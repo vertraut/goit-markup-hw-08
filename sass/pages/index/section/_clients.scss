@@ -2,7 +2,8 @@
 
 .clients_item {
   height: 90px;
-  width: 210px;
+  width: calc(50% - 15px);
+
   @media screen and (max-width: $max-tablet) {
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;

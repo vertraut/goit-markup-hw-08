@@ -30,7 +30,8 @@ img {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 200px;
+  min-width: 280px;
+  // background-color: rgb(255, 113, 113);
 
   @media screen and (min-width: $min-mobile) {
     width: 480px;
