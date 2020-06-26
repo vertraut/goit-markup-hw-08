@@ -5,9 +5,11 @@
 }
 
 .header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @media screen and (min-width: $min-tablet) {
-    display: flex;
-    align-items: center;
   }
 }
 

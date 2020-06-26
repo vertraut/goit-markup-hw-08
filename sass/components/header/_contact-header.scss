@@ -3,9 +3,13 @@
   @extend %list;
   display: none;
 
-  @media screen and (min-width: $min-desktop) {
+  @media screen and (min-width: $min-tablet) {
     display: flex;
-    margin-left: auto;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    flex-direction: row;
   }
 }
 
@@ -15,9 +19,14 @@
   color: $primery-text-color;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: $min-desktop) {
+    font-size: 14px;
+    line-height: 1.1429;
+  }
 }
 
 .contact-icon {
@@ -26,7 +35,13 @@
 }
 
 .header .contact li:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (max-width: $max-desktop) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    margin-right: 30px;
+  }
 }
 
 .contact-item:hover,

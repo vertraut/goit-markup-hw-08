@@ -3,10 +3,30 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-decoration: none;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.1666;
   letter-spacing: 0.03em;
   color: $accent-color;
+
+  @media screen and (min-width: $min-desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.header .logo {
+  @media screen and (max-width: $max-tablet) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $min-tablet) and (max-width: $max-desktop) {
+    margin-right: 81px;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    margin-right: 85px;
+  }
 }
 
 .footer .logo {
@@ -24,8 +44,4 @@
 
 .header .logo-accent {
   color: #000000;
-}
-
-.header .logo {
-  margin-right: 80px;
 }
