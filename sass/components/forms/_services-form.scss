@@ -1,18 +1,32 @@
 /* Форма заказать услугу */
 .form {
   /* position: relative; */
-  width: 448px;
+  min-width: 370px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width: $min-tablet) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    width: 448px;
+  }
 }
 
 .heading-form {
+  display: block;
+
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: $dark-color;
+
+  @media screen and (min-width: $min-desktop) {
+    line-height: 1.15;
+  }
 }
 
 .form-field {
@@ -106,10 +120,15 @@
 .policy label {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1666;
   letter-spacing: 0.03em;
   color: $primery-text-color;
+
+  @media screen and (min-width: $min-desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   &::before {
     content: '';

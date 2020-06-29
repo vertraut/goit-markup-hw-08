@@ -1,7 +1,11 @@
 /* contact header */
 .header .contact {
   @extend %list;
-  display: none;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-top: 60px;
+    text-align: center;
+  }
 
   @media screen and (min-width: $min-tablet) {
     display: flex;
@@ -14,14 +18,17 @@
 }
 
 .contact-item {
-  display: flex;
-  align-items: center;
   color: $primery-text-color;
   text-decoration: none;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.1666;
   letter-spacing: 0.02em;
+  text-align: center;
+  @media screen and (min-width: $min-tablet) {
+    display: flex;
+    align-items: center;
+  }
 
   @media screen and (min-width: $min-desktop) {
     font-size: 14px;
@@ -35,7 +42,11 @@
 }
 
 .header .contact li:not(:last-child) {
-  @media screen and (max-width: $max-desktop) {
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $min-tablet) and (max-width: $max-desktop) {
     margin-bottom: 10px;
   }
 

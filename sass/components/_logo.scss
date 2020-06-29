@@ -7,7 +7,6 @@
   line-height: 1.1666;
   letter-spacing: 0.03em;
   color: $accent-color;
-
   @media screen and (min-width: $min-desktop) {
     font-size: 26px;
     line-height: 1.19;
@@ -21,10 +20,12 @@
   }
 
   @media screen and (min-width: $min-tablet) and (max-width: $max-desktop) {
+    // min-width: 142px;
     margin-right: 81px;
   }
 
   @media screen and (min-width: $min-desktop) {
+    // min-width: 153px;
     margin-right: 85px;
   }
 }

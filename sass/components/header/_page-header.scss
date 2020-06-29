@@ -2,14 +2,41 @@
 
 .header {
   border-bottom: 1px solid #ececec;
+  // border-bottom: 10px solid #7bff00;
 }
 
 .header .container {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
+  @media screen and (max-width: $max-tablet) {
+    justify-content: space-between;
+  }
+}
+
+.header-content {
+  @media screen and (max-width: $max-tablet) {
+    display: none;
+    padding-bottom: 60px;
+    z-index: 100;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+    &.is-open {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+    }
+  }
+
   @media screen and (min-width: $min-tablet) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

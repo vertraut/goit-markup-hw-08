@@ -15,6 +15,7 @@
 
 .element-img {
   display: block;
+  width: 100%;
 }
 
 .element-thumb {
@@ -55,6 +56,9 @@
   line-height: 2;
   letter-spacing: 0.06em;
   font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .element-type {
