@@ -1,0 +1,18 @@
+.btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $light-bg-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.icon-close {
+  fill: #000000;
+  width: 11px;
+  height: 11px;
+  transition: fill $transition-duration $cubic;
+}

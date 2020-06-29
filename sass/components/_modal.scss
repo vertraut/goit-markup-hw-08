@@ -8,6 +8,11 @@
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity $transition-duration $cubic;
+  overflow-y: scroll;
+
+  @media screen and (max-width: $max-desktop) {
+    padding: 93px 15px;
+  }
 
   &.is-hidden {
     pointer-events: none;
@@ -16,32 +21,40 @@
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
+  @media screen and (min-width: $min-desktop) {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  position: relative;
+  width: 100%;
   padding: 40px;
   background-color: $light-bg-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   transition: transform $transition-duration $cubic;
-
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: $min-tablet) {
-    max-width: 450px;
   }
 
   @media screen and (min-width: $min-desktop) {
     max-width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
 .btn-close {
   position: absolute;
+  display: block;
+  justify-content: center;
+  align-items: center;
   top: 8px;
   right: 8px;
   width: 30px;
