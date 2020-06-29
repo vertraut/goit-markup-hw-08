@@ -46,7 +46,7 @@ img {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 480px;
+  min-width: 280px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -102,7 +102,7 @@ img {
 }
 
 .section {
-  min-width: 480px;
+  min-width: 280px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -642,7 +642,7 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
+  min-width: 280px;
 }
 
 .flex.container {
