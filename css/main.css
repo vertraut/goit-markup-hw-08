@@ -1097,7 +1097,7 @@ img {
   content: '';
   display: block;
   margin-right: 8px;
-  width: 15px;
+  min-width: 15px;
   height: 15px;
   border: 2px solid #212121;
   background-image: url(./../images/icon_check.svg);
