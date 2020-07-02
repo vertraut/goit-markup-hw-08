@@ -1,17 +1,37 @@
 /* hero */
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   min-width: 280px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-    url(../images/hero.jpg);
-  background-color: $grey-bg-color;
 
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    url(../images/hero-mobile.jpg);
+  @include hero-resolution(2, 'hero-mobile@2x.jpg');
+  @include hero-resolution(3, 'hero-mobile@3x.jpg');
+
+  background-color: $grey-bg-color;
   background-repeat: no-repeat;
   background-position: center;
-
   background-size: cover;
+
+  @media screen and (min-width: $min-tablet) and (max-width: $max-desktop) {
+    max-width: 768px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+      url(../images/hero-tablet.jpg);
+    @include hero-resolution(2, 'hero-tablet@2x.jpg');
+    @include hero-resolution(3, 'hero-tablet@3x.jpg');
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    max-width: 1600px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+      url(../images/hero.jpg);
+    @include hero-resolution(2, 'hero@2x.jpg');
+    @include hero-resolution(3, 'hero@3x.jpg');
+  }
 }
 .hero .container {
   text-align: center;

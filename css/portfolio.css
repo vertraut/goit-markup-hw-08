@@ -396,20 +396,29 @@ img {
   color: #757575;
   text-decoration: none;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1.1666;
   letter-spacing: 0.02em;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .contact-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    font-size: 12px;
+    line-height: 1.1666;
   }
 }
 
@@ -423,6 +432,17 @@ img {
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-icon.mail {
+    width: 14px;
+    height: 10px;
+  }
+  .contact-icon.phone {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 @media screen and (max-width: 767px) {
