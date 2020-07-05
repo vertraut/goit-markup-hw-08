@@ -1,7 +1,9 @@
 /* contact header */
 
 .header .contact {
-  margin-top: 60px;
+  @media screen and (max-width: $max-tablet) {
+    margin-top: 60px;
+  }
 }
 
 .header .contact-list {

@@ -364,8 +364,10 @@ img {
 }
 
 /* contact header */
-.header .contact {
-  margin-top: 60px;
+@media screen and (max-width: 767px) {
+  .header .contact {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (max-width: 767px) {
