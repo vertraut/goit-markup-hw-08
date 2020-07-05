@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.header-nav > ul, .header .contact, .portfolio .filter, .portfolio .examples, .address ul, .footer-social-list {
+.header-nav > ul, .header .contact-list, .portfolio .filter, .portfolio .examples, .address ul, .footer-social-list {
   /* убирем точки в списках, где это необходимо */
   list-style: none;
   margin: 0;
@@ -272,7 +272,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .header-nav li {
+  .header-nav li:not(:last-child) {
     margin-bottom: 40px;
   }
 }
@@ -364,15 +364,18 @@ img {
 }
 
 /* contact header */
+.header .contact {
+  margin-top: 60px;
+}
+
 @media screen and (max-width: 767px) {
-  .header .contact {
-    margin-top: 60px;
+  .header .contact-list {
     text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header .contact {
+  .header .contact-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -384,7 +387,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .header .contact {
+  .header .contact-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

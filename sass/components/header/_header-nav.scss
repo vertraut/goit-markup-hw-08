@@ -23,7 +23,7 @@
   }
 }
 
-.header-nav li {
+.header-nav li:not(:last-child) {
   @media screen and (max-width: $max-tablet) {
     margin-bottom: 40px;
   }

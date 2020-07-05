@@ -24,6 +24,11 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 50px;
+
+  @media screen and (max-width: $min-tablet) {
+    font-size: 28px;
+    line-height: 1.179;
+  }
 }
 
 .team-item {

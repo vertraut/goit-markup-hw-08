@@ -1,9 +1,13 @@
 /* contact header */
+
 .header .contact {
+  margin-top: 60px;
+}
+
+.header .contact-list {
   @extend %list;
 
   @media screen and (max-width: $max-tablet) {
-    margin-top: 60px;
     text-align: center;
   }
 
