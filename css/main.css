@@ -888,8 +888,15 @@ img {
   margin-bottom: 10px;
 }
 
-.team-item img {
+.team-item .thumb {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .team-item .thumb {
+    max-height: 320px;
+    overflow: hidden;
+  }
 }
 
 .team-item p {
